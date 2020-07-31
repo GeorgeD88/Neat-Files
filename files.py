@@ -25,7 +25,7 @@ class File:
         self.file_path = f"{destination}\{self.file_name}"  # redefines self.file_path to the new path
         self.enclosing_folder
 
-    # renames file and keeps the same destination
+    # renames file and keeps the same enclosing folder but changes the path to accomodate the new file name
     def rename(self, new_name: str):
         new_path = self.enclosing_folder + new_name  # takes the enclosing folder and the new file name and constructs a new file path
         os.rename(self.file_path, new_path)  # renames the file with the newly constructed file path using the os library
