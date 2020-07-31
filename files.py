@@ -43,3 +43,9 @@ class Video(File):
 
     def __init__(self, file_path: str):
         super().__init__(file_path)
+
+
+class Picture(File):
+
+    def __init__(self, file_path: str):
+        super().__init__(file_path)
